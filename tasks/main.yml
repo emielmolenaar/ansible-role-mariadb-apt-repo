@@ -1,0 +1,18 @@
+---
+
+- name: Ensure software-properties-common is installed
+  package:
+    name: software-properties-common
+    state: present
+    
+- name: Add MariaDB APT key
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: F1656F24C74CD1D8
+    state: present
+    
+- name: Add MariaDB APT repo
+  apt_repository:
+    repo: "{{ mariadb_repo_url }}"
+    update_cache: yes
+    state: present

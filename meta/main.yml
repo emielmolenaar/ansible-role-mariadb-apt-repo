@@ -1,0 +1,15 @@
+---
+
+galaxy_info:
+  role_name: ansible-role-mariadb-apt-repo
+  author: Emiel Molenaar
+  description: An Ansible role to add a MariaDB APT repository to Debian-based hosts
+  issue_tracker_url: https://github.com/emielmolenaar/ansible-role-generate-dhparam/issues
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  galaxy_tags:
+    - mariadb
+    - mysql
+    - apt
+    - deb
+  dependencies: []
