@@ -1,4 +1,4 @@
 ---
 
 mariadb_version: 10.4
-mariadb_repo_url: "deb [arch=amd64] https://mariadb.mirror.pcextreme.nl/repo/{{ mariadb_version }}/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} main"
+mariadb_repo_url: "deb [arch=amd64] http://ams2.mirrors.digitalocean.com/mariadb/repo/{{ mariadb_version }}/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} main"
