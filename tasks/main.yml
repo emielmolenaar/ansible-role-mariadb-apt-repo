@@ -7,11 +7,10 @@
 
 - name: Add MariaDB APT key
   apt_key:
-    keyserver: keyserver.ubuntu.com
-    id: F1656F24C74CD1D8
+    url: https://mariadb.org/mariadb_release_signing_key.asc
     state: present
 
-- name: Add MariaDB APT repo
+- name: "Add MariaDB APT repo for version {{ mardiadb_version }}"
   apt_repository:
     repo: "{{ mariadb_repo_url }}"
     update_cache: yes
