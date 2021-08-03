@@ -10,7 +10,7 @@
     url: https://mariadb.org/mariadb_release_signing_key.asc
     state: present
 
-- name: "Add MariaDB APT repo for version {{ mardiadb_version }}"
+- name: "Add MariaDB APT repo for version {{ mariadb_version }}"
   apt_repository:
     repo: "{{ mariadb_repo_url }}"
     update_cache: yes
